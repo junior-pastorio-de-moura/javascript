@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botoes que alertam</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            font-size: 18px;
+        }
+        .tudo{
+            width: 30%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aquamarine;
+            margin-top: 15px;
+            padding: 20px 5px;
+        }
+        .tudo button{
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: bold;
+        }
+        .tudo button:first-child{background-color: rgb(173, 125, 66);}
+        .tudo button:nth-child(2){background-color: rgb(50, 173, 67);}
+        .tudo button:nth-child(3){background-color: rgb(194, 92, 172);}
+        .tudo button:nth-child(4){background-color: rgb(173, 66, 80);}
+        .tudo button:last-child{background-color: rgb(173, 66, 66);}
+    </style>
+</head>
+<body>
+    <div class="tudo">
+        <button type="button" onclick="acao1()">Botao 1</button>
+        <button type="button" onclick="acao2()">Botao 2</button>
+        <button type="button" onclick="acao3()">Botao 3</button>
+        <button type="button" onclick="acao4()">Botao 4</button>
+        <button type="button" onclick="acao5()">Botao 5</button>
+    </div>
+
+
+    <script>
+        acao1 = function(){
+            alert("Você clicou em um botao");
+        }
+        acao2 = function(){
+            alert("Você clicou no outro botão!");
+        }
+        acao3 = function(){
+            alert("Sabia que ia clicar nesse botão também!");
+        }
+        acao4 = function(){
+            alert("Vai clicar em todos os botões?");
+        }
+        acao5 = function(){
+            alert("Sabia que ia clicar em todos, quando não vê o fim não para né!");
+        }
+    </script>   
+</body>
+</html>
